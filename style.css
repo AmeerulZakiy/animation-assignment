@@ -1,0 +1,167 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.sun {
+    /* display: block; */
+    width: auto;
+    z-index: 1;
+    float: right;
+    transform: translateY(-50%);
+    animation: sun 1s linear infinite;
+
+}
+@keyframes sun
+{
+    100%{
+        transform: translateY(-5px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+ 
+    0%{
+        transform: translateY(-5px);
+    }
+ 
+ 
+}
+
+.space {
+   background-image: url(assets/bg.jpg);
+   overflow: hidden;
+   height: 150vh;
+   background-size: cover;
+   background-position: center;
+   position: relative;
+   background-attachment: fixed;
+   width: auto;
+}
+
+.ocean {
+    background-image: url(assets/ocean.jpg);
+    overflow: hidden;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+    width: auto;
+ }
+
+.highway {
+    height: 200px;
+    width: 500%;
+    display: block;
+    background-image: url(assets/road.jpg);
+    position: absolute;
+    background-position: center;
+    bottom:0;
+    left: 0;
+    right: 0;
+    /* z-index: 1; */
+    animation: highway 5s linear infinite;
+}
+
+@keyframes highway{
+    100%{
+        transform: translateX(-3400px);
+    }
+}
+
+
+.city {
+    height: 250px;
+    width: 500%;
+    background-image: url(assets/city.png);
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    right:0;
+    display: block;
+    /* z-index: 1; */
+    background-repeat: repeat-x;
+    animation: city 20s linear infinite;
+}
+
+@keyframes city {
+    100%{
+        transform: translateX(-1400px);
+    }
+}
+
+.ball{
+    width: 200px;
+    left: 50%;
+    bottom: 100px;
+    transform: translateX(-50%);
+    position: absolute;
+    /* z-index: 2;  */
+}
+
+.ball img{
+    width: 100%;
+    animation: ball 1s linear infinite;
+}
+ 
+@keyframes ball {
+    100%{
+        transform: translateY(-50px) rotate(0deg);
+    }
+    50%{
+        transform: translateY(50px) rotate(180deg);
+    }
+    0%{
+        transform: translateY(-50px) rotate(360deg);
+    }
+}
+
+.plane {
+    
+    z-index: 3;
+    padding: absolute;
+    
+}
+
+.plane img {
+    width: 10%;
+    height: 10%;
+    animation: plane 5s linear infinite ;
+}
+
+@keyframes plane {
+    100%{
+        transform: rotate(180deg) translate(10% , 10%);
+    }
+    50%{
+        transform: translate(1000% , 500%);
+    }
+
+   
+}
+.plane2 {
+    
+    z-index: 3;
+    padding: absolute;
+    
+}
+
+.plane2 img {
+    width: 10%;
+    height: 10%;
+    animation: plane2 5s linear infinite ;
+}
+
+@keyframes plane2 {
+    100%{
+        transform: translate(1000% , 10%);
+    }
+    
+}
+
+
+
+
+
+
